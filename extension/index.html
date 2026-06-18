@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cortex Agent Dashboard Filter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/tableau/extensions-api/lib/tableau.extensions.1.latest.min.js"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="status-bar" aria-live="polite">
+        <span class="status-dot" id="statusDot"></span>
+        <span id="statusText">Loading extension...</span>
+      </section>
+
+      <header>
+        <p class="eyebrow">Tableau Extension</p>
+        <h1>F1 AI Assistant</h1>
+        <p class="subtitle">Ask questions in natural language to explore Formula 1 history.</p>
+      </header>
+
+      <section class="panel">
+        <label for="agentPrompt">Ask the agent</label>
+        <textarea id="agentPrompt" rows="3">Show me Lewis Hamilton</textarea>
+        <div class="actions">
+          <button id="askAgent" type="button" disabled>Ask Assistant</button>
+          <button id="applyLastFilter" type="button" disabled>Apply Last Filter</button>
+        </div>
+      </section>
+
+      <section class="answer-panel" id="answerPanel" hidden>
+        <h2>AI Response</h2>
+        <p id="agentAnswer"></p>
+      </section>
+
+      <section class="panel">
+        <div class="actions single-action">
+          <button id="clearFilter" type="button" disabled>Clear Dashboard Filter</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

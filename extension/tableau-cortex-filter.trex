@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest manifest-version="0.1" xmlns="http://www.tableau.com/xml/extension_manifest">
+  <dashboard-extension id="com.martinregan.tableau-cortex-filter" extension-version="0.1.0">
+    <default-locale>en_GB</default-locale>
+    <name resource-id="name"/>
+    <description resource-id="description"/>
+    <author name="Martin Regan" email="" organization="" website="https://localhost"/>
+    <min-api-version>1.0</min-api-version>
+    <source-location>
+      <url>http://localhost:8765/extension/index.html</url>
+    </source-location>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAABmJLR0QA/wD/AP+gvaeTAAABfUlEQVRoge3aMU7DMBCF4e8AoapS3ICLkIuoQsXUAaChi6RISEhsQMCQ+P9Bfs5CMoYWSbB5yu0rTLLMXrPjOUny+Pe2bY/hMe+SH5yIu2sQXz+HkK9BfP0cQr4G8fVzCPkaqIfj9sBpmOY5C35I4e89z/Pl8+Gy3W7Lsmzbtm3btu27bdu2bfuzaXk8Hk+n02m1WmVZlhhjkiRJkiRJkiRJkr7Xv6E8z9N1Xa/Xq9VqWZaFYYjneb5eL4QQfd+P4ziO45jNZvV6vZ7n+f1+vV6v1+v1er1er9fr9Xq9Xq/X6/V6vV6v1+v1er1er9fr9Xq9Xq/X6/V6vV6v1+v1er1er9fr9Xq9Xq/X6/V6vV6v1+v1er1er9fr9Xq9Xq/X6/V6vV6v1+v1er1er9fr9Xq9Xq/X6/V6vV6v1+v1er1e/8c55xzHcRzHcRzHcZqm6bp+v9/P8zzP83w+n8/ndrs9Ho9Go1GpVJIkSZIkSZIkSZIkfU8fQSf6YEbZ0xwAAAAASUVORK5CYII=</icon>
+    <permissions>
+      <permission>full data</permission>
+    </permissions>
+  </dashboard-extension>
+  <resources>
+    <resource id="name">
+      <text locale="en_GB">F1 AI Assistant</text>
+    </resource>
+    <resource id="description">
+      <text locale="en_GB">A Tableau Extension that uses a Snowflake Cortex Agent to answer Formula 1 questions and filter a dashboard.</text>
+    </resource>
+  </resources>
+</manifest>
