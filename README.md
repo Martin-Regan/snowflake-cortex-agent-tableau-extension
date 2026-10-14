@@ -17,6 +17,12 @@ Tableau dashboard
 
 The Cortex Agent acts as the reasoning layer. It interprets the user's question and returns structured filter instructions. The Tableau Extension applies those filters with the Tableau Extensions API.
 
+## Development
+
+This project was created as part of a workshop task to integrate a Snowflake Cortex Agent into a Tableau dashboard. The focus of the project was on the integration between Tableau and Snowflake rather than writing the extension code from scratch.
+
+I designed and built the underlying Cortex Agent, including its semantic model, instructions and custom tools. OpenAI Codex was used extensively to develop the Tableau extension code, which I tested and iterated on to get the integration working.
+
 ## Repository Structure
 
 ```text
@@ -133,6 +139,3 @@ The extension applies each returned filter to every compatible worksheet. Worksh
 - `extension/app.js` calls `http://localhost:8766/tableau-agent-filter`.
 - For Tableau Server or Tableau Cloud, configure network-enabled extensions and safe-listing according to your Tableau site requirements.
 - This public repo is not runnable until you provide your own Snowflake account URL, Cortex Agent object names, and PAT in a local `.env` file.
-
-## Development
-The Tableau extension was developed using Codex for the JavaScript implementation. I designed the integration and requirements, configured the Snowflake Cortex Agent and Tableau components, and tested and iterated on the resulting extension.
