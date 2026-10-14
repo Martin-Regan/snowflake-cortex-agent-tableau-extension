@@ -133,3 +133,6 @@ The extension applies each returned filter to every compatible worksheet. Worksh
 - `extension/app.js` calls `http://localhost:8766/tableau-agent-filter`.
 - For Tableau Server or Tableau Cloud, configure network-enabled extensions and safe-listing according to your Tableau site requirements.
 - This public repo is not runnable until you provide your own Snowflake account URL, Cortex Agent object names, and PAT in a local `.env` file.
+
+## Development
+The Tableau extension was developed using Codex for the JavaScript implementation. I designed the integration and requirements, configured the Snowflake Cortex Agent and Tableau components, and tested and iterated on the resulting extension.
